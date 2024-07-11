@@ -1,0 +1,9 @@
+<p>directives works!</p>
+<!-- *ngIf -->
+<p *ngIf="showTemplate; then hiddenTemplate; else secondTemplate"></p>
+<ng-template #hiddenTemplate> Hidden templates </ng-template>
+<ng-template #secondTemplate> secondTemplate </ng-template>
+
+<!-- *ngFor -->
+<p>Demo of *ngFor</p>
+<div *ngFor="let x of fruitsArr">{{ x }} in fruits</div>
